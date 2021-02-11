@@ -1,0 +1,974 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1C2F3D125D43717007B08E4 /* EmployeeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C2F3D025D43717007B08E4 /* EmployeeDetailViewModel.swift */; };
+		CA33552825D4828D00016A16 /* ApplicationX+WindowX.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33552725D4828D00016A16 /* ApplicationX+WindowX.swift */; };
+		CA35675025D2F37700A05BA0 /* Employee.json in Resources */ = {isa = PBXBuildFile; fileRef = CA35674F25D2F37700A05BA0 /* Employee.json */; };
+		CA587A5925D128E5002CDEF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587A5825D128E5002CDEF2 /* AppDelegate.swift */; };
+		CA587A6225D128E7002CDEF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA587A6125D128E7002CDEF2 /* Assets.xcassets */; };
+		CA587A6525D128E7002CDEF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA587A6325D128E7002CDEF2 /* LaunchScreen.storyboard */; };
+		CA587A7025D128E8002CDEF2 /* MyEmployee_VIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587A6F25D128E8002CDEF2 /* MyEmployee_VIPERTests.swift */; };
+		CA587A7B25D128E8002CDEF2 /* MyEmployee_VIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587A7A25D128E8002CDEF2 /* MyEmployee_VIPERUITests.swift */; };
+		CA587A9425D132A8002CDEF2 /* NetworkAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587A9325D132A8002CDEF2 /* NetworkAPIClient.swift */; };
+		CA587A9925D132E0002CDEF2 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587A9825D132E0002CDEF2 /* NetworkError.swift */; };
+		CA587A9E25D13314002CDEF2 /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587A9D25D13314002CDEF2 /* APIEndPoint.swift */; };
+		CA587AA325D13342002CDEF2 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587AA225D13342002CDEF2 /* URLRequestConvertible.swift */; };
+		CA587AA825D133A4002CDEF2 /* MyEmployeeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587AA725D133A4002CDEF2 /* MyEmployeeAPI.swift */; };
+		CA587ABA25D13DA0002CDEF2 /* EmpListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587AB925D13DA0002CDEF2 /* EmpListProtocol.swift */; };
+		CA587ABF25D13DB2002CDEF2 /* EmpListModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587ABE25D13DB2002CDEF2 /* EmpListModuleBuilder.swift */; };
+		CA587AC425D13DCA002CDEF2 /* EmpListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587AC325D13DCA002CDEF2 /* EmpListRouter.swift */; };
+		CA587AC925D13DF1002CDEF2 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587AC825D13DF1002CDEF2 /* Employee.swift */; };
+		CA587ACE25D13E0C002CDEF2 /* EmpLInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587ACD25D13E0C002CDEF2 /* EmpLInteractor.swift */; };
+		CA587ADB25D14025002CDEF2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587ADA25D14025002CDEF2 /* Constants.swift */; };
+		CA587AE625D14094002CDEF2 /* ContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587AE525D14094002CDEF2 /* ContainerCell.swift */; };
+		CA587AEE25D140C0002CDEF2 /* GenericCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587AED25D140C0002CDEF2 /* GenericCollectionViewCell.swift */; };
+		CA587AF325D14115002CDEF2 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587AF225D14115002CDEF2 /* Reusable.swift */; };
+		CA587AFF25D1419E002CDEF2 /* CollectionViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587AF725D1419E002CDEF2 /* CollectionViewX.swift */; };
+		CA587B0025D1419E002CDEF2 /* ViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587AF825D1419E002CDEF2 /* ViewX.swift */; };
+		CA587B0125D1419E002CDEF2 /* UIImageViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587AF925D1419E002CDEF2 /* UIImageViewX.swift */; };
+		CA587B0225D1419E002CDEF2 /* FontX.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587AFA25D1419E002CDEF2 /* FontX.swift */; };
+		CA587B0325D1419E002CDEF2 /* UIColorX.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587AFB25D1419E002CDEF2 /* UIColorX.swift */; };
+		CA587B0425D1419E002CDEF2 /* ConstraintsX.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587AFC25D1419E002CDEF2 /* ConstraintsX.swift */; };
+		CA587B0525D1419E002CDEF2 /* UIViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587AFD25D1419E002CDEF2 /* UIViewControllerX.swift */; };
+		CA587B0625D1419E002CDEF2 /* UIImageX.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587AFE25D1419E002CDEF2 /* UIImageX.swift */; };
+		CA587B0B25D15204002CDEF2 /* EmpListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587B0A25D15204002CDEF2 /* EmpListVC.swift */; };
+		CA587B1025D1521A002CDEF2 /* EmpLViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587B0F25D1521A002CDEF2 /* EmpLViewModel.swift */; };
+		CA587B1525D1522C002CDEF2 /* EmpLPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587B1425D1522C002CDEF2 /* EmpLPresenter.swift */; };
+		CA587B2125D154EB002CDEF2 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587B2025D154EB002CDEF2 /* Address.swift */; };
+		CA587B2925D154F7002CDEF2 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587B2825D154F7002CDEF2 /* Company.swift */; };
+		CA587B2E25D15508002CDEF2 /* Geo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587B2D25D15508002CDEF2 /* Geo.swift */; };
+		CA587B3625D15A4A002CDEF2 /* EmpLCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587B3525D15A4A002CDEF2 /* EmpLCardView.swift */; };
+		CA587B3B25D15C70002CDEF2 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587B3A25D15C70002CDEF2 /* FooterView.swift */; };
+		CA587B5125D1B3A4002CDEF2 /* EmpDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587B5025D1B3A4002CDEF2 /* EmpDetailProtocol.swift */; };
+		CA587B5925D1B3B9002CDEF2 /* EmpDetailModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587B5825D1B3B9002CDEF2 /* EmpDetailModuleBuilder.swift */; };
+		CA587B5E25D1B3CA002CDEF2 /* EmpDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587B5D25D1B3CA002CDEF2 /* EmpDetailRouter.swift */; };
+		CA587B6325D1B3E0002CDEF2 /* EmpDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587B6225D1B3E0002CDEF2 /* EmpDetailInteractor.swift */; };
+		CA587B6925D1B41F002CDEF2 /* EmpDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587B6725D1B41F002CDEF2 /* EmpDetailVC.swift */; };
+		CA587B6A25D1B41F002CDEF2 /* EmpDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA587B6825D1B41F002CDEF2 /* EmpDetailVC.xib */; };
+		CA587B7425D1B45B002CDEF2 /* EmpDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587B7325D1B45B002CDEF2 /* EmpDetailPresenter.swift */; };
+		CA587B7C25D1D265002CDEF2 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587B7B25D1D265002CDEF2 /* CacheManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA587A6C25D128E8002CDEF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA587A4D25D128E5002CDEF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA587A5425D128E5002CDEF2;
+			remoteInfo = "MyEmployee-VIPER";
+		};
+		CA587A7725D128E8002CDEF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA587A4D25D128E5002CDEF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA587A5425D128E5002CDEF2;
+			remoteInfo = "MyEmployee-VIPER";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B1C2F3D025D43717007B08E4 /* EmployeeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailViewModel.swift; sourceTree = "<group>"; };
+		CA33552725D4828D00016A16 /* ApplicationX+WindowX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationX+WindowX.swift"; sourceTree = "<group>"; };
+		CA35674F25D2F37700A05BA0 /* Employee.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Employee.json; sourceTree = "<group>"; };
+		CA587A5525D128E5002CDEF2 /* MyEmployee-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyEmployee-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA587A5825D128E5002CDEF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA587A6125D128E7002CDEF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA587A6425D128E7002CDEF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA587A6625D128E7002CDEF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA587A6B25D128E8002CDEF2 /* MyEmployee-VIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyEmployee-VIPERTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA587A6F25D128E8002CDEF2 /* MyEmployee_VIPERTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEmployee_VIPERTests.swift; sourceTree = "<group>"; };
+		CA587A7125D128E8002CDEF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA587A7625D128E8002CDEF2 /* MyEmployee-VIPERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyEmployee-VIPERUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA587A7A25D128E8002CDEF2 /* MyEmployee_VIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEmployee_VIPERUITests.swift; sourceTree = "<group>"; };
+		CA587A7C25D128E8002CDEF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA587A9325D132A8002CDEF2 /* NetworkAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIClient.swift; sourceTree = "<group>"; };
+		CA587A9825D132E0002CDEF2 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CA587A9D25D13314002CDEF2 /* APIEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoint.swift; sourceTree = "<group>"; };
+		CA587AA225D13342002CDEF2 /* URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
+		CA587AA725D133A4002CDEF2 /* MyEmployeeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEmployeeAPI.swift; sourceTree = "<group>"; };
+		CA587AB925D13DA0002CDEF2 /* EmpListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpListProtocol.swift; sourceTree = "<group>"; };
+		CA587ABE25D13DB2002CDEF2 /* EmpListModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpListModuleBuilder.swift; sourceTree = "<group>"; };
+		CA587AC325D13DCA002CDEF2 /* EmpListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpListRouter.swift; sourceTree = "<group>"; };
+		CA587AC825D13DF1002CDEF2 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		CA587ACD25D13E0C002CDEF2 /* EmpLInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpLInteractor.swift; sourceTree = "<group>"; };
+		CA587ADA25D14025002CDEF2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CA587AE525D14094002CDEF2 /* ContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerCell.swift; sourceTree = "<group>"; };
+		CA587AED25D140C0002CDEF2 /* GenericCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCollectionViewCell.swift; sourceTree = "<group>"; };
+		CA587AF225D14115002CDEF2 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		CA587AF725D1419E002CDEF2 /* CollectionViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewX.swift; sourceTree = "<group>"; };
+		CA587AF825D1419E002CDEF2 /* ViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewX.swift; sourceTree = "<group>"; };
+		CA587AF925D1419E002CDEF2 /* UIImageViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewX.swift; sourceTree = "<group>"; };
+		CA587AFA25D1419E002CDEF2 /* FontX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontX.swift; sourceTree = "<group>"; };
+		CA587AFB25D1419E002CDEF2 /* UIColorX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorX.swift; sourceTree = "<group>"; };
+		CA587AFC25D1419E002CDEF2 /* ConstraintsX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintsX.swift; sourceTree = "<group>"; };
+		CA587AFD25D1419E002CDEF2 /* UIViewControllerX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerX.swift; sourceTree = "<group>"; };
+		CA587AFE25D1419E002CDEF2 /* UIImageX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageX.swift; sourceTree = "<group>"; };
+		CA587B0A25D15204002CDEF2 /* EmpListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpListVC.swift; sourceTree = "<group>"; };
+		CA587B0F25D1521A002CDEF2 /* EmpLViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpLViewModel.swift; sourceTree = "<group>"; };
+		CA587B1425D1522C002CDEF2 /* EmpLPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpLPresenter.swift; sourceTree = "<group>"; };
+		CA587B2025D154EB002CDEF2 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		CA587B2825D154F7002CDEF2 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		CA587B2D25D15508002CDEF2 /* Geo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geo.swift; sourceTree = "<group>"; };
+		CA587B3525D15A4A002CDEF2 /* EmpLCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpLCardView.swift; sourceTree = "<group>"; };
+		CA587B3A25D15C70002CDEF2 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		CA587B5025D1B3A4002CDEF2 /* EmpDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpDetailProtocol.swift; sourceTree = "<group>"; };
+		CA587B5825D1B3B9002CDEF2 /* EmpDetailModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpDetailModuleBuilder.swift; sourceTree = "<group>"; };
+		CA587B5D25D1B3CA002CDEF2 /* EmpDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpDetailRouter.swift; sourceTree = "<group>"; };
+		CA587B6225D1B3E0002CDEF2 /* EmpDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpDetailInteractor.swift; sourceTree = "<group>"; };
+		CA587B6725D1B41F002CDEF2 /* EmpDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpDetailVC.swift; sourceTree = "<group>"; };
+		CA587B6825D1B41F002CDEF2 /* EmpDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmpDetailVC.xib; sourceTree = "<group>"; };
+		CA587B7325D1B45B002CDEF2 /* EmpDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpDetailPresenter.swift; sourceTree = "<group>"; };
+		CA587B7B25D1D265002CDEF2 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA587A5225D128E5002CDEF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA587A6825D128E8002CDEF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA587A7325D128E8002CDEF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA35673925D294EA00A05BA0 /* APIEntity */ = {
+			isa = PBXGroup;
+			children = (
+				CA587AC825D13DF1002CDEF2 /* Employee.swift */,
+				CA587B2025D154EB002CDEF2 /* Address.swift */,
+				CA587B2825D154F7002CDEF2 /* Company.swift */,
+				CA587B2D25D15508002CDEF2 /* Geo.swift */,
+			);
+			path = APIEntity;
+			sourceTree = "<group>";
+		};
+		CA587A4C25D128E5002CDEF2 = {
+			isa = PBXGroup;
+			children = (
+				CA587A5725D128E5002CDEF2 /* MyEmployee-VIPER */,
+				CA587A6E25D128E8002CDEF2 /* MyEmployee-VIPERTests */,
+				CA587A7925D128E8002CDEF2 /* MyEmployee-VIPERUITests */,
+				CA587A5625D128E5002CDEF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA587A5625D128E5002CDEF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA587A5525D128E5002CDEF2 /* MyEmployee-VIPER.app */,
+				CA587A6B25D128E8002CDEF2 /* MyEmployee-VIPERTests.xctest */,
+				CA587A7625D128E8002CDEF2 /* MyEmployee-VIPERUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA587A5725D128E5002CDEF2 /* MyEmployee-VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				CA587B8025D1D276002CDEF2 /* Cache */,
+				CA587AD225D13F58002CDEF2 /* Views */,
+				CA587AD325D13F73002CDEF2 /* Constants */,
+				CA587AD925D13FFF002CDEF2 /* Cells */,
+				CA587A8F25D12E55002CDEF2 /* Network Manager */,
+				CA587A8D25D12E2E002CDEF2 /* Modules */,
+				CA587A8C25D12E11002CDEF2 /* StoryBoards */,
+				CA587AD725D13FB9002CDEF2 /* Protocols */,
+				CA587AD825D13FC3002CDEF2 /* Extensions */,
+				CA587A8B25D12DE8002CDEF2 /* Supporting Files */,
+			);
+			path = "MyEmployee-VIPER";
+			sourceTree = "<group>";
+		};
+		CA587A6E25D128E8002CDEF2 /* MyEmployee-VIPERTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA587A6F25D128E8002CDEF2 /* MyEmployee_VIPERTests.swift */,
+				CA587A7125D128E8002CDEF2 /* Info.plist */,
+				CA35674F25D2F37700A05BA0 /* Employee.json */,
+			);
+			path = "MyEmployee-VIPERTests";
+			sourceTree = "<group>";
+		};
+		CA587A7925D128E8002CDEF2 /* MyEmployee-VIPERUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA587A7A25D128E8002CDEF2 /* MyEmployee_VIPERUITests.swift */,
+				CA587A7C25D128E8002CDEF2 /* Info.plist */,
+			);
+			path = "MyEmployee-VIPERUITests";
+			sourceTree = "<group>";
+		};
+		CA587A8B25D12DE8002CDEF2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA587A5825D128E5002CDEF2 /* AppDelegate.swift */,
+				CA587A6125D128E7002CDEF2 /* Assets.xcassets */,
+				CA587A6625D128E7002CDEF2 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA587A8C25D12E11002CDEF2 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				CA587A6325D128E7002CDEF2 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		CA587A8D25D12E2E002CDEF2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CA587AAF25D13CD8002CDEF2 /* EmployeeList */,
+				CA587AB025D13CE1002CDEF2 /* EmployeeDetail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CA587A8F25D12E55002CDEF2 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CA587A9325D132A8002CDEF2 /* NetworkAPIClient.swift */,
+				CA587A9825D132E0002CDEF2 /* NetworkError.swift */,
+				CA587A9D25D13314002CDEF2 /* APIEndPoint.swift */,
+				CA587AA225D13342002CDEF2 /* URLRequestConvertible.swift */,
+				CA587AA725D133A4002CDEF2 /* MyEmployeeAPI.swift */,
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
+		CA587AAF25D13CD8002CDEF2 /* EmployeeList */ = {
+			isa = PBXGroup;
+			children = (
+				CA587B1925D15402002CDEF2 /* Protocol */,
+				CA587B1A25D1541B002CDEF2 /* Builder */,
+				CA587B1B25D15422002CDEF2 /* Router */,
+				CA587B1C25D1542E002CDEF2 /* Entity */,
+				CA587B1D25D15435002CDEF2 /* Interactor */,
+				CA587B1E25D1543F002CDEF2 /* Views */,
+				CA587B1F25D15445002CDEF2 /* Presenter */,
+			);
+			path = EmployeeList;
+			sourceTree = "<group>";
+		};
+		CA587AB025D13CE1002CDEF2 /* EmployeeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CA587B4925D1B309002CDEF2 /* Protocol */,
+				CA587B4F25D1B35A002CDEF2 /* Builder */,
+				CA587B4E25D1B351002CDEF2 /* Router */,
+				CA587B4C25D1B341002CDEF2 /* Interactor */,
+				CA587B4B25D1B33A002CDEF2 /* Views */,
+				CA587B4A25D1B317002CDEF2 /* Presenter */,
+			);
+			path = EmployeeDetail;
+			sourceTree = "<group>";
+		};
+		CA587AD225D13F58002CDEF2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA587B3525D15A4A002CDEF2 /* EmpLCardView.swift */,
+				CA587B3A25D15C70002CDEF2 /* FooterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA587AD325D13F73002CDEF2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CA587ADA25D14025002CDEF2 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		CA587AD725D13FB9002CDEF2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CA587AF225D14115002CDEF2 /* Reusable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CA587AD825D13FC3002CDEF2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA587AF725D1419E002CDEF2 /* CollectionViewX.swift */,
+				CA587AFC25D1419E002CDEF2 /* ConstraintsX.swift */,
+				CA587AFA25D1419E002CDEF2 /* FontX.swift */,
+				CA587AFB25D1419E002CDEF2 /* UIColorX.swift */,
+				CA587AF925D1419E002CDEF2 /* UIImageViewX.swift */,
+				CA587AFE25D1419E002CDEF2 /* UIImageX.swift */,
+				CA587AFD25D1419E002CDEF2 /* UIViewControllerX.swift */,
+				CA587AF825D1419E002CDEF2 /* ViewX.swift */,
+				CA33552725D4828D00016A16 /* ApplicationX+WindowX.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CA587AD925D13FFF002CDEF2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CA587AE225D14057002CDEF2 /* CollectionViewCells */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CA587AE225D14057002CDEF2 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				CA587AE325D14064002CDEF2 /* ContainerCell */,
+				CA587AE425D1406F002CDEF2 /* GenericCollectionView */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		CA587AE325D14064002CDEF2 /* ContainerCell */ = {
+			isa = PBXGroup;
+			children = (
+				CA587AE525D14094002CDEF2 /* ContainerCell.swift */,
+			);
+			path = ContainerCell;
+			sourceTree = "<group>";
+		};
+		CA587AE425D1406F002CDEF2 /* GenericCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				CA587AED25D140C0002CDEF2 /* GenericCollectionViewCell.swift */,
+			);
+			path = GenericCollectionView;
+			sourceTree = "<group>";
+		};
+		CA587B1925D15402002CDEF2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CA587AB925D13DA0002CDEF2 /* EmpListProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		CA587B1A25D1541B002CDEF2 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				CA587ABE25D13DB2002CDEF2 /* EmpListModuleBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		CA587B1B25D15422002CDEF2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CA587AC325D13DCA002CDEF2 /* EmpListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CA587B1C25D1542E002CDEF2 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CA35673925D294EA00A05BA0 /* APIEntity */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		CA587B1D25D15435002CDEF2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CA587ACD25D13E0C002CDEF2 /* EmpLInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CA587B1E25D1543F002CDEF2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA587B0A25D15204002CDEF2 /* EmpListVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA587B1F25D15445002CDEF2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CA587B0F25D1521A002CDEF2 /* EmpLViewModel.swift */,
+				CA587B1425D1522C002CDEF2 /* EmpLPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CA587B4925D1B309002CDEF2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CA587B5025D1B3A4002CDEF2 /* EmpDetailProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		CA587B4A25D1B317002CDEF2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CA587B7325D1B45B002CDEF2 /* EmpDetailPresenter.swift */,
+				B1C2F3D025D43717007B08E4 /* EmployeeDetailViewModel.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CA587B4B25D1B33A002CDEF2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA587B6725D1B41F002CDEF2 /* EmpDetailVC.swift */,
+				CA587B6825D1B41F002CDEF2 /* EmpDetailVC.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA587B4C25D1B341002CDEF2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CA587B6225D1B3E0002CDEF2 /* EmpDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CA587B4E25D1B351002CDEF2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CA587B5D25D1B3CA002CDEF2 /* EmpDetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CA587B4F25D1B35A002CDEF2 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				CA587B5825D1B3B9002CDEF2 /* EmpDetailModuleBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		CA587B8025D1D276002CDEF2 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				CA587B7B25D1D265002CDEF2 /* CacheManager.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA587A5425D128E5002CDEF2 /* MyEmployee-VIPER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA587A7F25D128E8002CDEF2 /* Build configuration list for PBXNativeTarget "MyEmployee-VIPER" */;
+			buildPhases = (
+				CA587A5125D128E5002CDEF2 /* Sources */,
+				CA587A5225D128E5002CDEF2 /* Frameworks */,
+				CA587A5325D128E5002CDEF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MyEmployee-VIPER";
+			productName = "MyEmployee-VIPER";
+			productReference = CA587A5525D128E5002CDEF2 /* MyEmployee-VIPER.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA587A6A25D128E8002CDEF2 /* MyEmployee-VIPERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA587A8225D128E8002CDEF2 /* Build configuration list for PBXNativeTarget "MyEmployee-VIPERTests" */;
+			buildPhases = (
+				CA587A6725D128E8002CDEF2 /* Sources */,
+				CA587A6825D128E8002CDEF2 /* Frameworks */,
+				CA587A6925D128E8002CDEF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA587A6D25D128E8002CDEF2 /* PBXTargetDependency */,
+			);
+			name = "MyEmployee-VIPERTests";
+			productName = "MyEmployee-VIPERTests";
+			productReference = CA587A6B25D128E8002CDEF2 /* MyEmployee-VIPERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA587A7525D128E8002CDEF2 /* MyEmployee-VIPERUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA587A8525D128E8002CDEF2 /* Build configuration list for PBXNativeTarget "MyEmployee-VIPERUITests" */;
+			buildPhases = (
+				CA587A7225D128E8002CDEF2 /* Sources */,
+				CA587A7325D128E8002CDEF2 /* Frameworks */,
+				CA587A7425D128E8002CDEF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA587A7825D128E8002CDEF2 /* PBXTargetDependency */,
+			);
+			name = "MyEmployee-VIPERUITests";
+			productName = "MyEmployee-VIPERUITests";
+			productReference = CA587A7625D128E8002CDEF2 /* MyEmployee-VIPERUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA587A4D25D128E5002CDEF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					CA587A5425D128E5002CDEF2 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					CA587A6A25D128E8002CDEF2 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = CA587A5425D128E5002CDEF2;
+					};
+					CA587A7525D128E8002CDEF2 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = CA587A5425D128E5002CDEF2;
+					};
+				};
+			};
+			buildConfigurationList = CA587A5025D128E5002CDEF2 /* Build configuration list for PBXProject "MyEmployee-VIPER" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA587A4C25D128E5002CDEF2;
+			productRefGroup = CA587A5625D128E5002CDEF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA587A5425D128E5002CDEF2 /* MyEmployee-VIPER */,
+				CA587A6A25D128E8002CDEF2 /* MyEmployee-VIPERTests */,
+				CA587A7525D128E8002CDEF2 /* MyEmployee-VIPERUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA587A5325D128E5002CDEF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA587A6525D128E7002CDEF2 /* LaunchScreen.storyboard in Resources */,
+				CA587A6225D128E7002CDEF2 /* Assets.xcassets in Resources */,
+				CA587B6A25D1B41F002CDEF2 /* EmpDetailVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA587A6925D128E8002CDEF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA35675025D2F37700A05BA0 /* Employee.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA587A7425D128E8002CDEF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA587A5125D128E5002CDEF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA587ACE25D13E0C002CDEF2 /* EmpLInteractor.swift in Sources */,
+				CA587AE625D14094002CDEF2 /* ContainerCell.swift in Sources */,
+				CA587AEE25D140C0002CDEF2 /* GenericCollectionViewCell.swift in Sources */,
+				CA587A9425D132A8002CDEF2 /* NetworkAPIClient.swift in Sources */,
+				CA587B0425D1419E002CDEF2 /* ConstraintsX.swift in Sources */,
+				CA587B5125D1B3A4002CDEF2 /* EmpDetailProtocol.swift in Sources */,
+				CA587AA325D13342002CDEF2 /* URLRequestConvertible.swift in Sources */,
+				CA587AC925D13DF1002CDEF2 /* Employee.swift in Sources */,
+				CA587A9E25D13314002CDEF2 /* APIEndPoint.swift in Sources */,
+				CA587A9925D132E0002CDEF2 /* NetworkError.swift in Sources */,
+				CA587AC425D13DCA002CDEF2 /* EmpListRouter.swift in Sources */,
+				CA587B3625D15A4A002CDEF2 /* EmpLCardView.swift in Sources */,
+				CA587B6325D1B3E0002CDEF2 /* EmpDetailInteractor.swift in Sources */,
+				CA587B7C25D1D265002CDEF2 /* CacheManager.swift in Sources */,
+				CA587AF325D14115002CDEF2 /* Reusable.swift in Sources */,
+				CA587B2925D154F7002CDEF2 /* Company.swift in Sources */,
+				CA587B5925D1B3B9002CDEF2 /* EmpDetailModuleBuilder.swift in Sources */,
+				CA587A5925D128E5002CDEF2 /* AppDelegate.swift in Sources */,
+				CA587ABF25D13DB2002CDEF2 /* EmpListModuleBuilder.swift in Sources */,
+				CA587B3B25D15C70002CDEF2 /* FooterView.swift in Sources */,
+				CA33552825D4828D00016A16 /* ApplicationX+WindowX.swift in Sources */,
+				CA587B0625D1419E002CDEF2 /* UIImageX.swift in Sources */,
+				CA587ABA25D13DA0002CDEF2 /* EmpListProtocol.swift in Sources */,
+				CA587B1025D1521A002CDEF2 /* EmpLViewModel.swift in Sources */,
+				B1C2F3D125D43717007B08E4 /* EmployeeDetailViewModel.swift in Sources */,
+				CA587B6925D1B41F002CDEF2 /* EmpDetailVC.swift in Sources */,
+				CA587B1525D1522C002CDEF2 /* EmpLPresenter.swift in Sources */,
+				CA587B0225D1419E002CDEF2 /* FontX.swift in Sources */,
+				CA587B2125D154EB002CDEF2 /* Address.swift in Sources */,
+				CA587B7425D1B45B002CDEF2 /* EmpDetailPresenter.swift in Sources */,
+				CA587B0325D1419E002CDEF2 /* UIColorX.swift in Sources */,
+				CA587B0B25D15204002CDEF2 /* EmpListVC.swift in Sources */,
+				CA587AA825D133A4002CDEF2 /* MyEmployeeAPI.swift in Sources */,
+				CA587B0525D1419E002CDEF2 /* UIViewControllerX.swift in Sources */,
+				CA587ADB25D14025002CDEF2 /* Constants.swift in Sources */,
+				CA587B0125D1419E002CDEF2 /* UIImageViewX.swift in Sources */,
+				CA587B2E25D15508002CDEF2 /* Geo.swift in Sources */,
+				CA587AFF25D1419E002CDEF2 /* CollectionViewX.swift in Sources */,
+				CA587B5E25D1B3CA002CDEF2 /* EmpDetailRouter.swift in Sources */,
+				CA587B0025D1419E002CDEF2 /* ViewX.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA587A6725D128E8002CDEF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA587A7025D128E8002CDEF2 /* MyEmployee_VIPERTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA587A7225D128E8002CDEF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA587A7B25D128E8002CDEF2 /* MyEmployee_VIPERUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA587A6D25D128E8002CDEF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA587A5425D128E5002CDEF2 /* MyEmployee-VIPER */;
+			targetProxy = CA587A6C25D128E8002CDEF2 /* PBXContainerItemProxy */;
+		};
+		CA587A7825D128E8002CDEF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA587A5425D128E5002CDEF2 /* MyEmployee-VIPER */;
+			targetProxy = CA587A7725D128E8002CDEF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA587A6325D128E7002CDEF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA587A6425D128E7002CDEF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA587A7D25D128E8002CDEF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA587A7E25D128E8002CDEF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA587A8025D128E8002CDEF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4XZ34X89Z;
+				INFOPLIST_FILE = "MyEmployee-VIPER/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MyEmployee-VIPER";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CA587A8125D128E8002CDEF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4XZ34X89Z;
+				INFOPLIST_FILE = "MyEmployee-VIPER/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MyEmployee-VIPER";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CA587A8325D128E8002CDEF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4XZ34X89Z;
+				INFOPLIST_FILE = "MyEmployee-VIPERTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MyEmployee-VIPERTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyEmployee-VIPER.app/MyEmployee-VIPER";
+			};
+			name = Debug;
+		};
+		CA587A8425D128E8002CDEF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4XZ34X89Z;
+				INFOPLIST_FILE = "MyEmployee-VIPERTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MyEmployee-VIPERTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyEmployee-VIPER.app/MyEmployee-VIPER";
+			};
+			name = Release;
+		};
+		CA587A8625D128E8002CDEF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4XZ34X89Z;
+				INFOPLIST_FILE = "MyEmployee-VIPERUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MyEmployee-VIPERUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MyEmployee-VIPER";
+			};
+			name = Debug;
+		};
+		CA587A8725D128E8002CDEF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4XZ34X89Z;
+				INFOPLIST_FILE = "MyEmployee-VIPERUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MyEmployee-VIPERUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MyEmployee-VIPER";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA587A5025D128E5002CDEF2 /* Build configuration list for PBXProject "MyEmployee-VIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA587A7D25D128E8002CDEF2 /* Debug */,
+				CA587A7E25D128E8002CDEF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA587A7F25D128E8002CDEF2 /* Build configuration list for PBXNativeTarget "MyEmployee-VIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA587A8025D128E8002CDEF2 /* Debug */,
+				CA587A8125D128E8002CDEF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA587A8225D128E8002CDEF2 /* Build configuration list for PBXNativeTarget "MyEmployee-VIPERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA587A8325D128E8002CDEF2 /* Debug */,
+				CA587A8425D128E8002CDEF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA587A8525D128E8002CDEF2 /* Build configuration list for PBXNativeTarget "MyEmployee-VIPERUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA587A8625D128E8002CDEF2 /* Debug */,
+				CA587A8725D128E8002CDEF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA587A4D25D128E5002CDEF2 /* Project object */;
+}
