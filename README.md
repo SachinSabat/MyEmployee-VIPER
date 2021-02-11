@@ -1,7 +1,8 @@
 # MyEmployee-VIPER
 
 A demo project to share my learnings
-[![Swift Version][swift-image]][swift-url]
+
+[![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)](http://cocoapods.org/pods/LFAlertController)
 
 MyEmployee-VIPER is a simple app to show employees list, mark an employee favourite, see employee details such as employee name, username, company, website and phone number.
 
